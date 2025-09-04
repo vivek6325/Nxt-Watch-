@@ -1,12 +1,58 @@
-In this project, let's build **Nxt Watch** by applying the concepts we have learned till now.
+# NxtWatch
 
-### Refer to the videos below:
+The **NxtWatch App** is a video streaming platform inspired by YouTube. It provides users with a seamless interface to watch, search, and explore videos across various categories. With features like theme switching, video details view, and authentication, NxtWatch delivers an engaging user experience.  
+---
+
+## ✨ Features  
+
+- **User Interface**  
+  - Built distinct pages for **Login, Home, Trending, Gaming, Saved Videos, and Video Details**.  
+  - Responsive design with reusable **React components** for consistency and maintainability.  
+
+- **Authentication**  
+  - Secure login using **username and password**.  
+  - On successful login, a **JWT token** is generated and stored locally.  
+  - All API calls are authorized by attaching the token in request headers.  
+
+- **Routing**  
+  - Implemented navigation with **React Router** (`Route`, `Switch`, `Link`).  
+  - Includes **protected routes** for authenticated users only.  
+  - Redirects unauthenticated users to the Login page automatically.  
+
+- **Theme Switching**  
+  - Supports **Light and Dark mode** for a personalized viewing experience.  
+  - Theme preference is stored and applied consistently across pages.  
+
+- **Search & Explore**  
+  - Users can **search videos by keywords**.  
+  - Videos are fetched via **REST API calls** and displayed dynamically.  
+
+- **Category Pages**  
+  - **Trending Videos**: Displays popular and trending content.  
+  - **Gaming Videos**: Showcases gaming-related videos.  
+  - **Saved Videos**: Allows users to bookmark videos for later viewing.  
+
+- **Video Details Page**  
+  - Displays complete video information including **title, views, published date, and channel details**.  
+  - Provides **like, dislike, and save functionality** for user interaction.  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Frontend**: React JS, JavaScript, CSS  
+- **Routing**: React Router  
+- **APIs**: REST API Calls  
+- **Authentication**: JWT Tokens, Cookies, Local Storage  
+
+---
+### Refer to videos below:
 
 **Success View** <br/>
 
 <div style="text-align: center;">
      <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-output-v0.mp4" type="video/mp4">
+    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-output.mp4" type="video/mp4">
   </video>
 </div>
 <br/>
@@ -15,11 +61,11 @@ In this project, let's build **Nxt Watch** by applying the concepts we have lear
 
 <div style="text-align: center;">
     <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-failure-output-v0.mp4" type="video/mp4">
+    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-failure-output.mp4" type="video/mp4">
   </video>
 </div>
 <br/>
-
+<!--  
 ### Design Files
 
 <details>
@@ -603,3 +649,4 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
 > - Don't change the component folder names as those are the files being imported into the tests.
 > - **Do not remove the pre-filled code**
 > - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+-->
